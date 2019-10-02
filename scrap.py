@@ -14,16 +14,18 @@ img_name = image.get('src')
 
 price = soup.find(id='priceblock_dealprice').get_text() or soup.find(id='priceblock_ourprice').get_text()
 
-# price = price.replace(',','')
-# price = int(price[2:7])
+price = price.replace(',','')
+price = int(price[2:7])
 
 EarlierPrice = soup.find(class_='priceBlockStrikePriceString a-text-strike').get_text()
-# EarlierPrice = EarlierPrice.replace(',','')
-# EarlierPrice = int(EarlierPrice[2:7])
+EarlierPrice = EarlierPrice.replace(',','')
+
+
+EarlierPrice = float(EarlierPrice[2:])
 
 print("\nProduct Name :",title)
 print("Product_price:", price)
 print(img_name)
-print(EarlierPrice)
+print("EarlierPrice:",EarlierPrice)
 # print(EarlierPrice)
    
