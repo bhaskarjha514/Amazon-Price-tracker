@@ -9,7 +9,7 @@ title = soup.find(id='productTitle').get_text()
 title=title.strip()
 
 image = soup.find(id='landingImage')
-img_name = image.get('src')
+url_image = image.get('src')
 
 print("\nProduct Name :",title)
 try:
@@ -27,6 +27,6 @@ try:
 except AttributeError:
     pass
 
-print(img_name)
+print(url_image)
 
    
