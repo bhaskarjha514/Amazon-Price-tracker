@@ -17,12 +17,13 @@ price = soup.find(id='priceblock_dealprice').get_text() or soup.find(id='pricebl
 # price = price.replace(',','')
 # price = int(price[2:7])
 
-# EarlierPrice = soup.find(id='priceBlockStrikePriceString a-text-strike').get_text()
+EarlierPrice = soup.find(class_='priceBlockStrikePriceString a-text-strike').get_text()
 # EarlierPrice = EarlierPrice.replace(',','')
 # EarlierPrice = int(EarlierPrice[2:7])
 
 print("\nProduct Name :",title)
 print("Product_price:", price)
 print(img_name)
+print(EarlierPrice)
 # print(EarlierPrice)
    
