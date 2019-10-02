@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 
-url = 'https://www.amazon.in/Test-Exclusive-743/dp/B07DJHWWLN/ref=sr_1_1_sspa?crid=2ULP7O05QLR22&keywords=mi+note+7+pro+mobile+phone&qid=1569993804&s=gateway&smid=A14CZOWI0VEHLG&sprefix=mi+no%2Caps%2C1142&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzMU1JVkQ0V1JVQkVQJmVuY3J5cHRlZElkPUEwMjY1NzM5MkJTWjBMVDhTWlpMMSZlbmNyeXB0ZWRBZElkPUEwMDU4ODk4MUYwUlo5T1pTTUcxQiZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU='
+url = 'https://www.amazon.in/FX505DV-Graphics-7-3750H-Windows-FX505DV-AL026T/dp/B07VRLX5Y9/ref=sr_1_1_sspa?keywords=asus+laptop&qid=1569948373&s=gateway&smid=A14CZOWI0VEHLG&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFYVTA0NzhaTjQwWU4mZW5jcnlwdGVkSWQ9QTA3OTcwMzMyRlVSWVEwSTVMRloyJmVuY3J5cHRlZEFkSWQ9QTA4ODY2OTcySEdCQTNQOVA5SDgyJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=='
 source = requests.get(url).text
 soup = BeautifulSoup(source, 'lxml')
 
