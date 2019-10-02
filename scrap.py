@@ -16,7 +16,7 @@ try:
     price = soup.find(id='priceblock_dealprice').get_text() or soup.find(id='priceblock_ourprice').get_text()
     price = price.replace(',','')
     price = float(price[2:7])
-    print("Product_price:", price)
+    print("Product Price:", price)
 except AttributeError:
     pass
 try:
@@ -27,6 +27,6 @@ try:
 except AttributeError:
     pass
 
-print(url_image)
+print("Image:",url_image)
 
    
